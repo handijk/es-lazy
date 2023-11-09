@@ -1,0 +1,29 @@
+{
+  "ignorePatterns": ["dist", "node_modules", "coverage"],
+  "env": {
+    "es2022": true
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module"
+  },
+  "rules": {
+    "require-await": "error",
+    "require-yield": "error",
+    "no-return-await": "error",
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "all",
+        "caughtErrors": "all",
+        "ignoreRestSiblings": false,
+        "argsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "vars": "all"
+      }
+    ]
+  }
+}
+

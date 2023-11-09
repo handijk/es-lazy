@@ -1,0 +1,42 @@
+{
+  "name": "es-lazy",
+  "version": "0.0.1",
+  "description": "Lazy import ES module files",
+  "type": "module",
+  "exports": {
+    "./*": "./src/*"
+  },
+  "scripts": {
+    "format": "prettier --check \"**/*.js\"",
+    "format:fix": "prettier --write \"**/*.js\"",
+    "lint": "eslint {/**/,/}*.js",
+    "lint:fix": "eslint --fix {/**/,/}*.js",
+    "test": "vitest",
+    "test:watch": "vitest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/handijk/es-lazy.git"
+  },
+  "keywords": [
+    "lazy",
+    "import",
+    "es-modules"
+  ],
+  "author": "Han Dijk <info@handijk.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/handijk/es-lazy/issues"
+  },
+  "homepage": "https://github.com/handijk/es-lazy#readme",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^0.34.3",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-no-floating-promise": "^1.0.2",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^3.0.3",
+    "vitest": "^0.34.3"
+  }
+}
