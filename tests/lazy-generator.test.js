@@ -16,7 +16,6 @@ const importMeta = {
 };
 
 describe('lazy-generator', () => {
-
   const result1 = Symbol('result1');
   const result2 = Symbol('result2');
   const result3 = Symbol('result3');

@@ -16,11 +16,10 @@ const importMeta = {
 };
 
 describe('lazy-generator-factory', () => {
-  
   const result1 = Symbol('result1');
   const result2 = Symbol('result2');
   const result3 = Symbol('result3');
-  
+
   async function* generatorFn() {
     yield result1;
     yield result2;
